@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <div class="topbar-right">
-    <div class="data-badge">Base: <span id="data-base">16/03/2026</span></div>
+    <div class="data-badge">Base: <span id="data-base">17/03/2026</span></div>
     <div class="data-badge" style="display:none" id="total-badge">63 itens</div>
     <button class="hist-btn" onclick="abrirHistorico()" title="Histórico de atualizações">🕐 Histórico</button>
     <button class="hist-btn btn-print-estoque" onclick="imprimirEstoque('total')" title="Imprimir Estoque Total">🖨 Estoque</button>
@@ -796,7 +796,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">959.699,91</span>
+          <span class="kpi-value money" id="kpi-total">960.778,06</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -956,7 +956,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">16/03/2026 17:27</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">17/03/2026 09:35</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -987,6 +987,7 @@ const ESTOQUE_DATA = [
   {cod:"55.0",nome:"PIGMENTO AZUL",unf:"KG",fornecedor:"SENNI",estoque:38.0,custo:42.89,valor:1629.82},
   {cod:"407.0",nome:"CALCA BRIM",unf:"UN",fornecedor:"BRIM J LIMA DO NASCIMENTO",estoque:17.0,custo:63.0,valor:1071.0},
   {cod:"506.0",nome:"FILTRO PARA MASCARA DE GAS",unf:"UN",fornecedor:"ACAO DISTRIBUIDORA",estoque:50.0,custo:18.0,valor:900.0},
+  {cod:"283.0",nome:"NIVELANTE DISACOAT LA 100 S - GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:5.0,custo:153.63,valor:768.15},
   {cod:"330.0",nome:"ARAME GALVANIZADO",unf:"UN",fornecedor:"CENTRAL DISTRIBUIDORA",estoque:30.0,custo:23.2,valor:696.0},
   {cod:"178.0",nome:"ACELERADOR DMA - 1",unf:"LT",fornecedor:". CONFIBRAS",estoque:10.0,custo:65.0,valor:650.0},
   {cod:"406.0",nome:"CAMISA MALHA MANGA LONGA",unf:"UN",fornecedor:"MANGA LONGA J LIMA DO NASCIMENTO",estoque:21.0,custo:29.0,valor:609.0},
@@ -1001,6 +1002,7 @@ const ESTOQUE_DATA = [
   {cod:"267.0",nome:"ROLO DE LA ZERO GOTA 15CM",unf:"UN",fornecedor:"DE LA CONFIBRAS",estoque:32.0,custo:13.0,valor:416.0},
   {cod:"327.0",nome:"LIXA DE FERRO 60",unf:"UN",fornecedor:"FERRO 60 CENTRAL DISTRIBUIDORA",estoque:61.0,custo:5.95,valor:362.95},
   {cod:"378.0",nome:"ROLETE 25 X 80",unf:"UN",fornecedor:"Fornecedor",estoque:15.0,custo:24.12,valor:361.8},
+  {cod:"329.0",nome:"DISCO DE LIXA 4X1/2 36",unf:"UN",fornecedor:"LIXA 36 CENTRAL DISTRIBUIDORA",estoque:50.0,custo:6.2,valor:310.0},
   {cod:"404.0",nome:"BOTA COURO 44",unf:"UN",fornecedor:"COURO 44 PARAFUSOS BAHIA",estoque:5.0,custo:60.0,valor:300.0},
   {cod:"401.0",nome:"BOTA COURO 40",unf:"UN",fornecedor:"COURO 40 PARAFUSOS BAHIA",estoque:5.0,custo:60.0,valor:300.0},
   {cod:"517.0",nome:"LUVA LATEX",unf:"UN",fornecedor:"ACAO DISTRIBUIDORA",estoque:31.0,custo:9.5,valor:294.5},
@@ -1015,8 +1017,8 @@ const ESTOQUE_DATA = [
   {cod:"514.0",nome:"LIXA 1200",unf:"UN",fornecedor:"Fornecedor",estoque:59.0,custo:2.7,valor:159.3},
   {cod:"408.0",nome:"OCULOS JAGUAR INCOLOR",unf:"UN",fornecedor:"JAGUAR INCOLOFEIRA PROTECAO",estoque:22.0,custo:7.09,valor:155.98},
   {cod:"512.0",nome:"LIXA 220",unf:"UN",fornecedor:"Fornecedor",estoque:36.0,custo:3.5,valor:126.0},
-  {cod:"614.0",nome:"BOTA COURO 43",unf:"UN",fornecedor:"Fornecedor",estoque:2.0,custo:60.0,valor:120.0},
   {cod:"403.0",nome:"BOTA COURO 42",unf:"UN",fornecedor:"COURO 42 PARAFUSOS BAHIA",estoque:2.0,custo:60.0,valor:120.0},
+  {cod:"614.0",nome:"BOTA COURO 43",unf:"UN",fornecedor:"Fornecedor",estoque:2.0,custo:60.0,valor:120.0},
   {cod:"439.0",nome:"DISCO DE CORTE 4,5 3MM",unf:"UN",fornecedor:"DE\u00a8CORTE 4,5 LOJAO DOS PARAFUSOS",estoque:23.0,custo:5.13,valor:117.99},
   {cod:"507.0",nome:"REFIL PARA MASCARA DE GAS",unf:"UN",fornecedor:"Fornecedor",estoque:32.0,custo:3.0,valor:96.0},
   {cod:"582.0",nome:"ESPATULA PVC",unf:"UN",fornecedor:"Fornecedor",estoque:15.0,custo:4.5,valor:67.5},
@@ -1027,12 +1029,10 @@ const ESTOQUE_DATA = [
   {cod:"611.0",nome:"DISCO DE LIXA VELCRO 7 POL",unf:"UN",fornecedor:"Fornecedor",estoque:8.0,custo:5.12,valor:40.96},
   {cod:"324.0",nome:"AVENTAL PVC",unf:"UN",fornecedor:"PVC PROTEMAQ",estoque:3.0,custo:11.99,valor:35.97},
   {cod:"405.0",nome:"PROTETOR AURICULAR PLUG",unf:"UN",fornecedor:"AURICULAR PPARAFUSOS BAHIA",estoque:30.0,custo:1.0,valor:30.0},
-  {cod:"10.0",nome:"ROLETE TIRA BOLHA 25X120",unf:"UN",fornecedor:"Equiplas",estoque:0.0,custo:27.12,valor:0.0},
   {cod:"500.0",nome:"MASSA DE POLIR",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:40.25,valor:0.0},
-  {cod:"283.0",nome:"NIVELANTE DISACOAT LA 100 S - GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:0.0,custo:153.63,valor:0.0},
+  {cod:"303.0",nome:"PASTA BRANCA",unf:"UN",fornecedor:"BRANCA CONFIBRAS",estoque:0.0,custo:53.2,valor:0.0},
   {cod:"515.0",nome:"DISCO DE LIXA VELCRO 4 POL",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:3.2,valor:0.0},
-  {cod:"329.0",nome:"DISCO DE LIXA 4X1/2 36",unf:"UN",fornecedor:"LIXA 36 CENTRAL DISTRIBUIDORA",estoque:0.0,custo:6.2,valor:0.0},
-  {cod:"303.0",nome:"PASTA BRANCA",unf:"UN",fornecedor:"BRANCA CONFIBRAS",estoque:0.0,custo:53.2,valor:0.0}
+  {cod:"10.0",nome:"ROLETE TIRA BOLHA 25X120",unf:"UN",fornecedor:"Equiplas",estoque:0.0,custo:27.12,valor:0.0}
 ];
 
 // ═══════════════════════════════════════
@@ -1500,6 +1500,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
+  {"dataBase": "17/03/2026", "ts": "2026-03-17T09:36:40", "total": 65, "zerado": 4, "crit": 15, "low": 12, "totalVal": 960778.06},
   {"dataBase": "16/03/2026", "ts": "2026-03-16T17:29:03", "total": 65, "zerado": 6, "crit": 14, "low": 12, "totalVal": 959699.91},
   {"dataBase": "13/03/2026", "ts": "2026-03-13T15:30:29", "total": 66, "zerado": 6, "crit": 14, "low": 11, "totalVal": 1166281.93},
   {"dataBase": "12/03/2026", "ts": "2026-03-12T20:34:45", "total": 66, "zerado": 6, "crit": 14, "low": 11, "totalVal": 1215179.66},
