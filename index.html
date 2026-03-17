@@ -796,7 +796,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">912.246,26</span>
+          <span class="kpi-value money" id="kpi-total">912.906,26</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -956,7 +956,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">17/03/2026 10:39</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">17/03/2026 14:27</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -984,6 +984,7 @@ const ESTOQUE_DATA = [
   {cod:"257.0",nome:"MANUAL DE INSTALACAO",unf:"ML",fornecedor:"Fornecedor",estoque:7.0,custo:280.0,valor:1960.0},
   {cod:"7.0",nome:"LAMINA 1 FURO",unf:"UN",fornecedor:"Equiplas",estoque:800.0,custo:2.3,valor:1840.0},
   {cod:"55.0",nome:"PIGMENTO AZUL",unf:"KG",fornecedor:"SENNI",estoque:38.0,custo:42.89,valor:1629.82},
+  {cod:"108.0",nome:"FILME PVC 400X11 PB 408",unf:"KG",fornecedor:". BRANDAO EMBALAGENS",estoque:10.0,custo:110.0,valor:1100.0},
   {cod:"407.0",nome:"CALCA BRIM",unf:"UN",fornecedor:"BRIM J LIMA DO NASCIMENTO",estoque:17.0,custo:63.0,valor:1071.0},
   {cod:"238.0",nome:"DIOXIDO DE TITANIO",unf:"KG",fornecedor:"INTERCOM",estoque:50.0,custo:20.35,valor:1017.5},
   {cod:"506.0",nome:"FILTRO PARA MASCARA DE GAS",unf:"UN",fornecedor:"ACAO DISTRIBUIDORA",estoque:50.0,custo:18.0,valor:900.0},
@@ -996,7 +997,6 @@ const ESTOQUE_DATA = [
   {cod:"306.0",nome:"ETIQUETA 20X20 RED BOPP/ T LISA",unf:"ML",fornecedor:"REDONDA VM DISTRIBUICAO V M GRAFICA E",estoque:27.0,custo:20.0,valor:540.0},
   {cod:"399.0",nome:"PINCEL 2 POL",unf:"UN",fornecedor:"2POL CENTRAL DISTRIBUIDORA",estoque:74.0,custo:7.0,valor:518.0},
   {cod:"402.0",nome:"BOTA COURO 41",unf:"UN",fornecedor:"COURO 41 PARAFUSOS BAHIA",estoque:8.0,custo:60.0,valor:480.0},
-  {cod:"108.0",nome:"FILME PVC 400X11 PB 408",unf:"KG",fornecedor:". BRANDAO EMBALAGENS",estoque:4.0,custo:110.0,valor:440.0},
   {cod:"511.0",nome:"DISCO DE LIXA 7/5",unf:"UN",fornecedor:"Fornecedor",estoque:47.0,custo:9.3,valor:437.1},
   {cod:"333.0",nome:"CORDA TRANCADA 8MM",unf:"UN",fornecedor:"CENTRAL DISTRIBUIDORA",estoque:50.0,custo:8.64,valor:432.0},
   {cod:"267.0",nome:"ROLO DE LA ZERO GOTA 15CM",unf:"UN",fornecedor:"DE LA CONFIBRAS",estoque:32.0,custo:13.0,valor:416.0},
@@ -1017,8 +1017,8 @@ const ESTOQUE_DATA = [
   {cod:"514.0",nome:"LIXA 1200",unf:"UN",fornecedor:"Fornecedor",estoque:59.0,custo:2.7,valor:159.3},
   {cod:"408.0",nome:"OCULOS JAGUAR INCOLOR",unf:"UN",fornecedor:"JAGUAR INCOLOFEIRA PROTECAO",estoque:22.0,custo:7.09,valor:155.98},
   {cod:"512.0",nome:"LIXA 220",unf:"UN",fornecedor:"Fornecedor",estoque:36.0,custo:3.5,valor:126.0},
-  {cod:"614.0",nome:"BOTA COURO 43",unf:"UN",fornecedor:"Fornecedor",estoque:2.0,custo:60.0,valor:120.0},
   {cod:"403.0",nome:"BOTA COURO 42",unf:"UN",fornecedor:"COURO 42 PARAFUSOS BAHIA",estoque:2.0,custo:60.0,valor:120.0},
+  {cod:"614.0",nome:"BOTA COURO 43",unf:"UN",fornecedor:"Fornecedor",estoque:2.0,custo:60.0,valor:120.0},
   {cod:"439.0",nome:"DISCO DE CORTE 4,5 3MM",unf:"UN",fornecedor:"DE\u00a8CORTE 4,5 LOJAO DOS PARAFUSOS",estoque:23.0,custo:5.13,valor:117.99},
   {cod:"507.0",nome:"REFIL PARA MASCARA DE GAS",unf:"UN",fornecedor:"Fornecedor",estoque:32.0,custo:3.0,valor:96.0},
   {cod:"582.0",nome:"ESPATULA PVC",unf:"UN",fornecedor:"Fornecedor",estoque:15.0,custo:4.5,valor:67.5},
@@ -1029,10 +1029,10 @@ const ESTOQUE_DATA = [
   {cod:"611.0",nome:"DISCO DE LIXA VELCRO 7 POL",unf:"UN",fornecedor:"Fornecedor",estoque:8.0,custo:5.12,valor:40.96},
   {cod:"324.0",nome:"AVENTAL PVC",unf:"UN",fornecedor:"PVC PROTEMAQ",estoque:3.0,custo:11.99,valor:35.97},
   {cod:"405.0",nome:"PROTETOR AURICULAR PLUG",unf:"UN",fornecedor:"AURICULAR PPARAFUSOS BAHIA",estoque:30.0,custo:1.0,valor:30.0},
-  {cod:"500.0",nome:"MASSA DE POLIR",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:40.25,valor:0.0},
+  {cod:"303.0",nome:"PASTA BRANCA",unf:"UN",fornecedor:"BRANCA CONFIBRAS",estoque:0.0,custo:53.2,valor:0.0},
   {cod:"10.0",nome:"ROLETE TIRA BOLHA 25X120",unf:"UN",fornecedor:"Equiplas",estoque:0.0,custo:27.12,valor:0.0},
   {cod:"515.0",nome:"DISCO DE LIXA VELCRO 4 POL",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:3.2,valor:0.0},
-  {cod:"303.0",nome:"PASTA BRANCA",unf:"UN",fornecedor:"BRANCA CONFIBRAS",estoque:0.0,custo:53.2,valor:0.0}
+  {cod:"500.0",nome:"MASSA DE POLIR",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:40.25,valor:0.0}
 ];
 
 // ═══════════════════════════════════════
@@ -1502,7 +1502,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
-  {"dataBase": "17/03/2026", "ts": "2026-03-17T10:39:55", "total": 65, "zerado": 4, "crit": 16, "low": 11, "totalVal": 912246.26},
+  {"dataBase": "17/03/2026", "ts": "2026-03-17T14:28:59", "total": 65, "zerado": 4, "crit": 16, "low": 11, "totalVal": 912906.26},
   {"dataBase": "16/03/2026", "ts": "2026-03-16T17:29:03", "total": 65, "zerado": 6, "crit": 14, "low": 12, "totalVal": 959699.91},
   {"dataBase": "13/03/2026", "ts": "2026-03-13T15:30:29", "total": 66, "zerado": 6, "crit": 14, "low": 11, "totalVal": 1166281.93},
   {"dataBase": "12/03/2026", "ts": "2026-03-12T20:34:45", "total": 66, "zerado": 6, "crit": 14, "low": 11, "totalVal": 1215179.66},
