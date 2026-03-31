@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <div class="topbar-right">
-    <div class="data-badge">Base: <span id="data-base">30/03/2026</span></div>
+    <div class="data-badge">Base: <span id="data-base">31/03/2026</span></div>
     <div class="data-badge" style="display:none" id="total-badge">63 itens</div>
     <button class="hist-btn" onclick="abrirHistorico()" title="Histórico de atualizações">🕐 Histórico</button>
     <button class="hist-btn btn-print-estoque" onclick="imprimirEstoque('total')" title="Imprimir Estoque Total">🖨 Estoque</button>
@@ -796,7 +796,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">774.462,30</span>
+          <span class="kpi-value money" id="kpi-total">768.301,60</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -956,7 +956,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">30/03/2026 16:40</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">31/03/2026 08:31</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -972,11 +972,11 @@ const ESTOQUE_DATA = [
   {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:6820.3,custo:10.56,valor:72022.37},
   {cod:"4.0",nome:"GAS A GRANEL GLP",unf:"KG",fornecedor:"BAHIANA GAS - MATARIPE",estoque:5220.18,custo:5.92,valor:30903.47},
   {cod:"57.0",nome:"ROVING",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:3143.8,custo:7.55,valor:23735.69},
-  {cod:"238.0",nome:"DIOXIDO DE TITANIO",unf:"KG",fornecedor:"INTERCOM",estoque:575.0,custo:20.35,valor:11701.25},
-  {cod:"50.0",nome:"CATALISADOR",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:580.0,custo:18.65,valor:10817.0},
-  {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:1150.0,custo:8.7,valor:10005.0},
+  {cod:"238.0",nome:"DIOXIDO DE TITANIO",unf:"KG",fornecedor:"INTERCOM",estoque:550.0,custo:20.35,valor:11192.5},
+  {cod:"50.0",nome:"CATALISADOR",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:480.0,custo:18.65,valor:8952.0},
+  {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:750.0,custo:8.7,valor:6525.0},
   {cod:"653.0",nome:"ADESIVO TAMPA",unf:"ML",fornecedor:"Fornecedor",estoque:27.0,custo:170.0,valor:4590.0},
-  {cod:"119.0",nome:"DESMOLDANTE PMR-90 1LT",unf:"LT",fornecedor:"CONFIBRAS",estoque:14.0,custo:306.95,valor:4297.3},
+  {cod:"119.0",nome:"DESMOLDANTE PMR-90 1LT",unf:"LT",fornecedor:"CONFIBRAS",estoque:13.0,custo:306.95,valor:3990.35},
   {cod:"608.0",nome:"ESTIRENO",unf:"LT",fornecedor:"Fornecedor",estoque:400.0,custo:9.8,valor:3920.0},
   {cod:"7.0",nome:"LAMINA 1 FURO",unf:"UN",fornecedor:"Equiplas",estoque:1600.0,custo:2.3,valor:3680.0},
   {cod:"55.0",nome:"PIGMENTO AZUL",unf:"KG",fornecedor:"SENNI",estoque:80.0,custo:42.89,valor:3431.2},
@@ -1502,6 +1502,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
+  {"dataBase": "31/03/2026", "ts": "2026-03-31T08:32:45", "total": 65, "zerado": 2, "crit": 19, "low": 16, "totalVal": 768301.6},
   {"dataBase": "30/03/2026", "ts": "2026-03-30T16:41:50", "total": 65, "zerado": 2, "crit": 19, "low": 16, "totalVal": 774462.3},
   {"dataBase": "27/03/2026", "ts": "2026-03-30T09:36:43", "total": 63, "zerado": 1, "crit": 19, "low": 14, "totalVal": 1081881.23},
   {"dataBase": "26/03/2026", "ts": "2026-03-26T17:43:19", "total": 63, "zerado": 4, "crit": 19, "low": 12, "totalVal": 1080310.83},
