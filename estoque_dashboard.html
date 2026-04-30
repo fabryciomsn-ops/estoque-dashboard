@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <div class="topbar-right">
-    <div class="data-badge">Base: <span id="data-base">29/04/2026</span></div>
+    <div class="data-badge">Base: <span id="data-base">30/04/2026</span></div>
     <div class="data-badge" style="display:none" id="total-badge">63 itens</div>
     <button class="hist-btn" onclick="abrirHistorico()" title="Histórico de atualizações">🕐 Histórico</button>
     <button class="hist-btn btn-print-estoque" onclick="imprimirEstoque('total')" title="Imprimir Estoque Total">🖨 Estoque</button>
@@ -796,7 +796,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">546.263,73</span>
+          <span class="kpi-value money" id="kpi-total">1.173.539,46</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -956,7 +956,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">29/04/2026 17:59</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">30/04/2026 16:22</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -968,13 +968,13 @@ document.addEventListener('DOMContentLoaded', () => {
 // DADOS - GERADO PELO SCRIPT PYTHON
 // ===========================================
 const ESTOQUE_DATA = [
-  {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:16049.3,custo:14.92,valor:239455.56},
-  {cod:"190.0",nome:"POLIETILENO PEBD",unf:"KG",fornecedor:"ZERO GRAU ATACADOS",estoque:10500.0,custo:15.18,valor:159390.0},
+  {cod:"190.0",nome:"POLIETILENO PEBD",unf:"KG",fornecedor:"ZERO GRAU ATACADOS",estoque:39640.0,custo:15.18,valor:601735.2},
+  {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:27049.3,custo:14.92,valor:403575.56},
   {cod:"4.0",nome:"GAS A GRANEL GLP",unf:"KG",fornecedor:"BAHIANA GAS - MATARIPE",estoque:10213.18,custo:6.77,valor:69143.23},
+  {cod:"57.0",nome:"ROVING",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:3086.8,custo:9.03,valor:27873.8},
   {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:950.0,custo:8.7,valor:8265.0},
   {cod:"608.0",nome:"ESTIRENO",unf:"LT",fornecedor:"Fornecedor",estoque:800.0,custo:9.8,valor:7840.0},
   {cod:"283.0",nome:"NIVELANTE DISACOAT LA 100 S - GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:50.0,custo:153.63,valor:7681.5},
-  {cod:"57.0",nome:"ROVING",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:782.2,custo:9.03,valor:7063.27},
   {cod:"653.0",nome:"ADESIVO TAMPA",unf:"ML",fornecedor:"Fornecedor",estoque:27.0,custo:170.0,valor:4590.0},
   {cod:"55.0",nome:"PIGMENTO AZUL",unf:"KG",fornecedor:"SENNI",estoque:100.0,custo:42.89,valor:4289.0},
   {cod:"7.0",nome:"LAMINA 1 FURO",unf:"UN",fornecedor:"Equiplas",estoque:1800.0,custo:2.3,valor:4140.0},
@@ -1503,6 +1503,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
+  {"dataBase": "30/04/2026", "ts": "2026-04-30T16:24:41", "total": 66, "zerado": 1, "crit": 21, "low": 15, "totalVal": 1173539.46},
   {"dataBase": "29/04/2026", "ts": "2026-04-29T18:00:57", "total": 66, "zerado": 1, "crit": 21, "low": 15, "totalVal": 546263.73},
   {"dataBase": "28/04/2026", "ts": "2026-04-28T18:22:30", "total": 66, "zerado": 2, "crit": 14, "low": 21, "totalVal": 628083.15},
   {"dataBase": "27/04/2026", "ts": "2026-04-27T18:30:29", "total": 66, "zerado": 1, "crit": 14, "low": 17, "totalVal": 750566.28},
@@ -1532,7 +1533,6 @@ const HIST_EMBUTIDO = [
   {"dataBase": "17/03/2026", "ts": "2026-03-17T16:58:35", "total": 65, "zerado": 1, "crit": 16, "low": 13, "totalVal": 969665.08},
   {"dataBase": "16/03/2026", "ts": "2026-03-16T17:29:03", "total": 65, "zerado": 6, "crit": 14, "low": 12, "totalVal": 959699.91},
   {"dataBase": "13/03/2026", "ts": "2026-03-13T15:30:29", "total": 66, "zerado": 6, "crit": 14, "low": 11, "totalVal": 1166281.93},
-  {"dataBase": "12/03/2026", "ts": "2026-03-12T20:34:45", "total": 66, "zerado": 6, "crit": 14, "low": 11, "totalVal": 1215179.66},
 // HIST_EMBED_END
 ];
 
