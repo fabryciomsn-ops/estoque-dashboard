@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <div class="topbar-right">
-    <div class="data-badge">Base: <span id="data-base">11/05/2026</span></div>
+    <div class="data-badge">Base: <span id="data-base">12/05/2026</span></div>
     <div class="data-badge" style="display:none" id="total-badge">63 itens</div>
     <button class="hist-btn" onclick="abrirHistorico()" title="Histórico de atualizações">🕐 Histórico</button>
     <button class="hist-btn btn-print-estoque" onclick="imprimirEstoque('total')" title="Imprimir Estoque Total">🖨 Estoque</button>
@@ -796,7 +796,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">1.240.790,38</span>
+          <span class="kpi-value money" id="kpi-total">1.753.349,49</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -956,7 +956,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">11/05/2026 17:59</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">12/05/2026 17:48</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -968,10 +968,10 @@ document.addEventListener('DOMContentLoaded', () => {
 // DADOS - GERADO PELO SCRIPT PYTHON
 // ===========================================
 const ESTOQUE_DATA = [
-  {cod:"190.0",nome:"POLIETILENO PEBD",unf:"KG",fornecedor:"ZERO GRAU ATACADOS",estoque:50500.0,custo:15.18,valor:766590.0},
+  {cod:"190.0",nome:"POLIETILENO PEBD",unf:"KG",fornecedor:"ZERO GRAU ATACADOS",estoque:80500.0,custo:15.18,valor:1221990.0},
   {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:18060.3,custo:14.92,valor:269459.68},
+  {cod:"4.0",nome:"GAS A GRANEL GLP",unf:"KG",fornecedor:"BAHIANA GAS - MATARIPE",estoque:15741.18,custo:6.77,valor:106567.79},
   {cod:"57.0",nome:"ROVING",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:6348.2,custo:9.03,valor:57324.25},
-  {cod:"4.0",nome:"GAS A GRANEL GLP",unf:"KG",fornecedor:"BAHIANA GAS - MATARIPE",estoque:7298.18,custo:6.77,valor:49408.68},
   {cod:"238.0",nome:"DIOXIDO DE TITANIO",unf:"KG",fornecedor:"INTERCOM",estoque:950.0,custo:20.35,valor:19332.5},
   {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:950.0,custo:8.7,valor:8265.0},
   {cod:"608.0",nome:"ESTIRENO",unf:"LT",fornecedor:"Fornecedor",estoque:800.0,custo:9.8,valor:7840.0},
@@ -999,10 +999,10 @@ const ESTOQUE_DATA = [
   {cod:"402.0",nome:"BOTA COURO 41",unf:"UN",fornecedor:"COURO 41 PARAFUSOS BAHIA",estoque:8.0,custo:60.0,valor:480.0},
   {cod:"10.0",nome:"ROLETE TIRA BOLHA 25X120",unf:"UN",fornecedor:"Equiplas",estoque:17.0,custo:27.12,valor:461.04},
   {cod:"516.0",nome:"ESPATULA DE FERRO",unf:"UN",fornecedor:"Fornecedor",estoque:14.0,custo:32.0,valor:448.0},
-  {cod:"333.0",nome:"CORDA TRANCADA 8MM",unf:"UN",fornecedor:"CENTRAL DISTRIBUIDORA",estoque:50.0,custo:8.64,valor:432.0},
   {cod:"506.0",nome:"FILTRO PARA MASCARA DE GAS",unf:"UN",fornecedor:"ACAO DISTRIBUIDORA",estoque:24.0,custo:18.0,valor:432.0},
-  {cod:"401.0",nome:"BOTA COURO 40",unf:"UN",fornecedor:"COURO 40 PARAFUSOS BAHIA",estoque:7.0,custo:60.0,valor:420.0},
+  {cod:"333.0",nome:"CORDA TRANCADA 8MM",unf:"UN",fornecedor:"CENTRAL DISTRIBUIDORA",estoque:50.0,custo:8.64,valor:432.0},
   {cod:"518.0",nome:"MASCARA DE GAS",unf:"UN",fornecedor:"Fornecedor",estoque:15.0,custo:28.0,valor:420.0},
+  {cod:"401.0",nome:"BOTA COURO 40",unf:"UN",fornecedor:"COURO 40 PARAFUSOS BAHIA",estoque:7.0,custo:60.0,valor:420.0},
   {cod:"517.0",nome:"LUVA LATEX",unf:"UN",fornecedor:"ACAO DISTRIBUIDORA",estoque:42.0,custo:9.5,valor:399.0},
   {cod:"520.0",nome:"BOTA DE BORRACHA",unf:"UN",fornecedor:"Fornecedor",estoque:8.0,custo:48.0,valor:384.0},
   {cod:"378.0",nome:"ROLETE 25 X 80",unf:"UN",fornecedor:"Fornecedor",estoque:15.0,custo:24.12,valor:361.8},
@@ -1503,6 +1503,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
+  {"dataBase": "12/05/2026", "ts": "2026-05-12T17:48:39", "total": 66, "zerado": 1, "crit": 17, "low": 13, "totalVal": 1753349.49},
   {"dataBase": "11/05/2026", "ts": "2026-05-11T18:00:43", "total": 66, "zerado": 1, "crit": 17, "low": 13, "totalVal": 1240790.38},
   {"dataBase": "08/05/2026", "ts": "2026-05-11T14:06:01", "total": 66, "zerado": 1, "crit": 18, "low": 13, "totalVal": 768470.38},
   {"dataBase": "07/05/2026", "ts": "2026-05-07T17:15:48", "total": 66, "zerado": 1, "crit": 18, "low": 13, "totalVal": 878644.01},
@@ -1532,7 +1533,6 @@ const HIST_EMBUTIDO = [
   {"dataBase": "26/03/2026", "ts": "2026-03-26T17:43:19", "total": 63, "zerado": 4, "crit": 19, "low": 12, "totalVal": 1080310.83},
   {"dataBase": "25/03/2026", "ts": "2026-03-25T17:31:37", "total": 65, "zerado": 1, "crit": 18, "low": 12, "totalVal": 1371209.83},
   {"dataBase": "24/03/2026", "ts": "2026-03-24T14:59:52", "total": 65, "zerado": 2, "crit": 19, "low": 12, "totalVal": 1115038.83},
-  {"dataBase": "23/03/2026", "ts": "2026-03-23T18:47:03", "total": 65, "zerado": 2, "crit": 19, "low": 12, "totalVal": 1162277.38},
 // HIST_EMBED_END
 ];
 
