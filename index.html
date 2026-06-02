@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <div class="topbar-right">
-    <div class="data-badge">Base: <span id="data-base">01/06/2026</span></div>
+    <div class="data-badge">Base: <span id="data-base">02/06/2026</span></div>
     <div class="data-badge" style="display:none" id="total-badge">63 itens</div>
     <button class="hist-btn" onclick="abrirHistorico()" title="Histórico de atualizações">🕐 Histórico</button>
     <button class="hist-btn btn-print-estoque" onclick="imprimirEstoque('total')" title="Imprimir Estoque Total">🖨 Estoque</button>
@@ -796,7 +796,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">878.635,75</span>
+          <span class="kpi-value money" id="kpi-total">878.695,75</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -956,7 +956,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">01/06/2026 15:57</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">02/06/2026 10:31</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -996,9 +996,9 @@ const ESTOQUE_DATA = [
   {cod:"10.0",nome:"ROLETE TIRA BOLHA 25X120",unf:"UN",fornecedor:"Equiplas",estoque:17.0,custo:27.12,valor:461.04},
   {cod:"333.0",nome:"CORDA TRANCADA 8MM",unf:"UN",fornecedor:"CENTRAL DISTRIBUIDORA",estoque:50.0,custo:8.64,valor:432.0},
   {cod:"378.0",nome:"ROLETE 25 X 80",unf:"UN",fornecedor:"Fornecedor",estoque:15.0,custo:24.12,valor:361.8},
+  {cod:"401.0",nome:"BOTA COURO 40",unf:"UN",fornecedor:"COURO 40 PARAFUSOS BAHIA",estoque:6.0,custo:60.0,valor:360.0},
   {cod:"327.0",nome:"LIXA DE FERRO 60",unf:"UN",fornecedor:"FERRO 60 CENTRAL DISTRIBUIDORA",estoque:55.0,custo:5.95,valor:327.25},
   {cod:"408.0",nome:"OCULOS JAGUAR INCOLOR",unf:"UN",fornecedor:"JAGUAR INCOLOFEIRA PROTECAO",estoque:45.0,custo:7.09,valor:319.05},
-  {cod:"401.0",nome:"BOTA COURO 40",unf:"UN",fornecedor:"COURO 40 PARAFUSOS BAHIA",estoque:5.0,custo:60.0,valor:300.0},
   {cod:"508.0",nome:"LUVA DE COURO C/CURTO",unf:"UN",fornecedor:"Fornecedor",estoque:20.0,custo:15.0,valor:300.0},
   {cod:"582.0",nome:"ESPATULA PVC",unf:"UN",fornecedor:"Fornecedor",estoque:65.0,custo:4.5,valor:292.5},
   {cod:"511.0",nome:"DISCO DE LIXA 7/5",unf:"UN",fornecedor:"Fornecedor",estoque:28.0,custo:9.3,valor:260.4},
@@ -1503,6 +1503,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
+  {"dataBase": "02/06/2026", "ts": "2026-06-02T10:38:23", "total": 66, "zerado": 5, "crit": 13, "low": 15, "totalVal": 878695.75},
   {"dataBase": "01/06/2026", "ts": "2026-06-01T16:01:48", "total": 66, "zerado": 5, "crit": 14, "low": 14, "totalVal": 878635.75},
   {"dataBase": "28/05/2026", "ts": "2026-06-01T12:46:03", "total": 67, "zerado": 5, "crit": 16, "low": 14, "totalVal": 1463457.19},
   {"dataBase": "26/05/2026", "ts": "2026-05-26T11:47:50", "total": 67, "zerado": 4, "crit": 16, "low": 12, "totalVal": 1518892.53},
@@ -1532,7 +1533,6 @@ const HIST_EMBUTIDO = [
   {"dataBase": "14/04/2026", "ts": "2026-04-14T17:50:16", "total": 65, "zerado": 0, "crit": 14, "low": 18, "totalVal": 647251.85},
   {"dataBase": "13/04/2026", "ts": "2026-04-13T16:19:28", "total": 65, "zerado": 0, "crit": 14, "low": 15, "totalVal": 893846.6},
   {"dataBase": "07/04/2026", "ts": "2026-04-07T17:35:41", "total": 65, "zerado": 2, "crit": 16, "low": 12, "totalVal": 1003365.65},
-  {"dataBase": "06/04/2026", "ts": "2026-04-06T17:00:31", "total": 65, "zerado": 2, "crit": 16, "low": 12, "totalVal": 1144623.71},
 // HIST_EMBED_END
 ];
 
