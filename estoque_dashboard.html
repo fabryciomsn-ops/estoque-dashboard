@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <div class="topbar-right">
-    <div class="data-badge">Base: <span id="data-base">05/06/2026</span></div>
+    <div class="data-badge">Base: <span id="data-base">08/06/2026</span></div>
     <div class="data-badge" style="display:none" id="total-badge">63 itens</div>
     <button class="hist-btn" onclick="abrirHistorico()" title="Histórico de atualizações">🕐 Histórico</button>
     <button class="hist-btn btn-print-estoque" onclick="imprimirEstoque('total')" title="Imprimir Estoque Total">🖨 Estoque</button>
@@ -797,7 +797,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">937.097,73</span>
+          <span class="kpi-value money" id="kpi-total">780.259,35</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -1019,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">05/06/2026 17:01</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">08/06/2026 13:01</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -1031,73 +1031,72 @@ document.addEventListener('DOMContentLoaded', () => {
 // DADOS - GERADO PELO SCRIPT PYTHON
 // ===========================================
 const ESTOQUE_DATA = [
-  {cod:"190.0",nome:"POLIETILENO PEBD",unf:"KG",fornecedor:"ZERO GRAU ATACADOS",estoque:38100.0,custo:15.18,valor:578358.0,status:"NORMAL",classe_abc:"A"},
-  {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:14520.3,custo:14.92,valor:216642.88,status:"NORMAL",classe_abc:"B"},
-  {cod:"57.0",nome:"ROVING",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:4954.7,custo:9.03,valor:44740.94,status:"NORMAL",classe_abc:"B"},
-  {cod:"50.0",nome:"CATALISADOR",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:1140.0,custo:18.65,valor:21261.0,status:"NORMAL",classe_abc:"B"},
-  {cod:"4.0",nome:"GAS A GRANEL GLP",unf:"KG",fornecedor:"BAHIANA GAS - MATARIPE",estoque:2140.18,custo:6.77,valor:14489.02,status:"NORMAL",classe_abc:"B"},
+  {cod:"190.0",nome:"POLIETILENO PEBD",unf:"KG",fornecedor:"ZERO GRAU ATACADOS",estoque:31937.0,custo:15.18,valor:484803.66,status:"NORMAL",classe_abc:"A"},
+  {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:12100.3,custo:14.92,valor:180536.48,status:"NORMAL",classe_abc:"B"},
+  {cod:"57.0",nome:"ROVING",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:3708.7,custo:9.03,valor:33489.56,status:"NORMAL",classe_abc:"B"},
+  {cod:"50.0",nome:"CATALISADOR",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:1100.0,custo:18.65,valor:20515.0,status:"NORMAL",classe_abc:"B"},
   {cod:"55.0",nome:"PIGMENTO AZUL",unf:"KG",fornecedor:"SENNI",estoque:155.0,custo:42.89,valor:6647.95,status:"ATEN\u00c7\u00c3O",classe_abc:"B"},
-  {cod:"54.0",nome:"SILICA PIROGENICA - AEROSIL",unf:"KG",fornecedor:"SENNI",estoque:180.0,custo:36.0,valor:6480.0,status:"ATEN\u00c7\u00c3O",classe_abc:"B"},
-  {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:600.0,custo:8.7,valor:5220.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"54.0",nome:"SILICA PIROGENICA - AEROSIL",unf:"KG",fornecedor:"SENNI",estoque:170.0,custo:36.0,valor:6120.0,status:"ATEN\u00c7\u00c3O",classe_abc:"B"},
+  {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:600.0,custo:8.7,valor:5220.0,status:"NORMAL",classe_abc:"B"},
   {cod:"653.0",nome:"ADESIVO TAMPA",unf:"ML",fornecedor:"Fornecedor",estoque:27.0,custo:170.0,valor:4590.0,status:"NORMAL",classe_abc:"C"},
   {cod:"238.0",nome:"DIOXIDO DE TITANIO",unf:"KG",fornecedor:"INTERCOM",estoque:200.0,custo:20.35,valor:4070.0,status:"NORMAL",classe_abc:"C"},
   {cod:"608.0",nome:"ESTIRENO",unf:"LT",fornecedor:"Fornecedor",estoque:400.0,custo:9.8,valor:3920.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"7.0",nome:"LAMINA 1 FURO",unf:"UN",fornecedor:"Equiplas",estoque:1400.0,custo:2.3,valor:3220.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"7.0",nome:"LAMINA 1 FURO",unf:"UN",fornecedor:"Equiplas",estoque:1200.0,custo:2.3,valor:2760.0,status:"NORMAL",classe_abc:"C"},
   {cod:"189.0",nome:"SELADOR CHL 15",unf:"UN",fornecedor:"CONFIBRAS",estoque:5.0,custo:482.6,valor:2413.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"119.0",nome:"DESMOLDANTE PMR-90 1LT",unf:"LT",fornecedor:"CONFIBRAS",estoque:7.0,custo:306.95,valor:2148.65,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
+  {cod:"4.0",nome:"GAS A GRANEL GLP",unf:"KG",fornecedor:"BAHIANA GAS - MATARIPE",estoque:300.18,custo:6.77,valor:2032.22,status:"NORMAL",classe_abc:"C"},
   {cod:"257.0",nome:"MANUAL DE INSTALACAO",unf:"ML",fornecedor:"Fornecedor",estoque:7.0,custo:280.0,valor:1960.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"178.0",nome:"ACELERADOR DMA - 1",unf:"LT",fornecedor:". CONFIBRAS",estoque:30.0,custo:65.0,valor:1950.0,status:"NORMAL",classe_abc:"C"},
   {cod:"303.0",nome:"PASTA BRANCA",unf:"UN",fornecedor:"BRANCA CONFIBRAS",estoque:32.0,custo:53.2,valor:1702.4,status:"NORMAL",classe_abc:"C"},
   {cod:"259.0",nome:"THINNER",unf:"LT",fornecedor:"MARLON",estoque:200.0,custo:8.0,valor:1600.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"12.0",nome:"CERA DESMOLDANTE",unf:"KG",fornecedor:"CONFIBRAS",estoque:62.0,custo:25.0,valor:1550.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"407.0",nome:"CALCA BRIM",unf:"UN",fornecedor:"BRIM J LIMA DO NASCIMENTO",estoque:20.0,custo:63.0,valor:1260.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"267.0",nome:"ROLO DE LA ZERO GOTA 15CM",unf:"UN",fornecedor:"DE LA CONFIBRAS",estoque:79.0,custo:13.0,valor:1027.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"506.0",nome:"FILTRO PARA MASCARA DE GAS",unf:"UN",fornecedor:"ACAO DISTRIBUIDORA",estoque:57.0,custo:18.0,valor:1026.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"15.0",nome:"BUCHA PU VERDE 12",unf:"UN",fornecedor:"Equiplas",estoque:27.0,custo:30.2,valor:815.4,status:"NORMAL",classe_abc:"C"},
+  {cod:"267.0",nome:"ROLO DE LA ZERO GOTA 15CM",unf:"UN",fornecedor:"DE LA CONFIBRAS",estoque:76.0,custo:13.0,valor:988.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"12.0",nome:"CERA DESMOLDANTE",unf:"KG",fornecedor:"CONFIBRAS",estoque:37.0,custo:25.0,valor:925.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"402.0",nome:"BOTA COURO 41",unf:"UN",fornecedor:"COURO 41 PARAFUSOS BAHIA",estoque:11.0,custo:60.0,valor:660.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"108.0",nome:"FILME PVC 400X11 PB 408",unf:"KG",fornecedor:". BRANDAO EMBALAGENS",estoque:5.0,custo:110.0,valor:550.0,status:"CR\u00cdTICO",classe_abc:"C"},
+  {cod:"506.0",nome:"FILTRO PARA MASCARA DE GAS",unf:"UN",fornecedor:"ACAO DISTRIBUIDORA",estoque:36.0,custo:18.0,valor:648.0,status:"NORMAL",classe_abc:"C"},
   {cod:"306.0",nome:"ETIQUETA 20X20 RED BOPP/ T LISA",unf:"ML",fornecedor:"REDONDA VM DISTRIBUICAO V M GRAFICA E",estoque:27.0,custo:20.0,valor:540.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"401.0",nome:"BOTA COURO 40",unf:"UN",fornecedor:"COURO 40 PARAFUSOS BAHIA",estoque:9.0,custo:60.0,valor:540.0,status:"NORMAL",classe_abc:"C"},
   {cod:"518.0",nome:"MASCARA DE GAS",unf:"UN",fornecedor:"Fornecedor",estoque:19.0,custo:28.0,valor:532.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"15.0",nome:"BUCHA PU VERDE 12",unf:"UN",fornecedor:"Equiplas",estoque:17.0,custo:30.2,valor:513.4,status:"NORMAL",classe_abc:"C"},
   {cod:"403.0",nome:"BOTA COURO 42",unf:"UN",fornecedor:"COURO 42 PARAFUSOS BAHIA",estoque:8.0,custo:60.0,valor:480.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
-  {cod:"401.0",nome:"BOTA COURO 40",unf:"UN",fornecedor:"COURO 40 PARAFUSOS BAHIA",estoque:8.0,custo:60.0,valor:480.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"10.0",nome:"ROLETE TIRA BOLHA 25X120",unf:"UN",fornecedor:"Equiplas",estoque:17.0,custo:27.12,valor:461.04,status:"NORMAL",classe_abc:"C"},
   {cod:"508.0",nome:"LUVA DE COURO C/CURTO",unf:"UN",fornecedor:"Fornecedor",estoque:30.0,custo:15.0,valor:450.0,status:"NORMAL",classe_abc:"C"},
   {cod:"333.0",nome:"CORDA TRANCADA 8MM",unf:"UN",fornecedor:"CENTRAL DISTRIBUIDORA",estoque:50.0,custo:8.64,valor:432.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"408.0",nome:"OCULOS JAGUAR INCOLOR",unf:"UN",fornecedor:"JAGUAR INCOLOFEIRA PROTECAO",estoque:55.0,custo:7.09,valor:389.95,status:"NORMAL",classe_abc:"C"},
-  {cod:"332.0",nome:"MASCARA DESCARTAVEL PFF2",unf:"UN",fornecedor:"PFF2 CENTRAL DISTRIBUIDORA",estoque:333.0,custo:1.1,valor:366.3,status:"NORMAL",classe_abc:"C"},
+  {cod:"408.0",nome:"OCULOS JAGUAR INCOLOR",unf:"UN",fornecedor:"JAGUAR INCOLOFEIRA PROTECAO",estoque:54.0,custo:7.09,valor:382.86,status:"NORMAL",classe_abc:"C"},
   {cod:"378.0",nome:"ROLETE 25 X 80",unf:"UN",fornecedor:"Fornecedor",estoque:15.0,custo:24.12,valor:361.8,status:"NORMAL",classe_abc:"C"},
   {cod:"353.0",nome:"BOTA CR. ELAS. 39",unf:"UN",fornecedor:"CENTRAL DISTRIBUIDORA",estoque:6.0,custo:60.0,valor:360.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
+  {cod:"332.0",nome:"MASCARA DESCARTAVEL PFF2",unf:"UN",fornecedor:"PFF2 CENTRAL DISTRIBUIDORA",estoque:315.0,custo:1.1,valor:346.5,status:"NORMAL",classe_abc:"C"},
+  {cod:"108.0",nome:"FILME PVC 400X11 PB 408",unf:"KG",fornecedor:". BRANDAO EMBALAGENS",estoque:3.0,custo:110.0,valor:330.0,status:"CR\u00cdTICO",classe_abc:"C"},
   {cod:"327.0",nome:"LIXA DE FERRO 60",unf:"UN",fornecedor:"FERRO 60 CENTRAL DISTRIBUIDORA",estoque:53.0,custo:5.95,valor:315.35,status:"NORMAL",classe_abc:"C"},
   {cod:"404.0",nome:"BOTA COURO 44",unf:"UN",fornecedor:"COURO 44 PARAFUSOS BAHIA",estoque:5.0,custo:60.0,valor:300.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"582.0",nome:"ESPATULA PVC",unf:"UN",fornecedor:"Fornecedor",estoque:65.0,custo:4.5,valor:292.5,status:"NORMAL",classe_abc:"C"},
   {cod:"329.0",nome:"DISCO DE LIXA 4X1/2 36",unf:"UN",fornecedor:"LIXA 36 CENTRAL DISTRIBUIDORA",estoque:42.0,custo:6.2,valor:260.4,status:"NORMAL",classe_abc:"C"},
-  {cod:"324.0",nome:"AVENTAL PVC",unf:"UN",fornecedor:"PVC PROTEMAQ",estoque:21.0,custo:11.99,valor:251.79,status:"NORMAL",classe_abc:"C"},
   {cod:"511.0",nome:"DISCO DE LIXA 7/5",unf:"UN",fornecedor:"Fornecedor",estoque:27.0,custo:9.3,valor:251.1,status:"NORMAL",classe_abc:"C"},
   {cod:"328.0",nome:"LIXA DE FERRO 36",unf:"UN",fornecedor:"FERRO 36 CENTRAL DISTRIBUIDORA",estoque:45.0,custo:4.8,valor:216.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"516.0",nome:"ESPATULA DE FERRO",unf:"UN",fornecedor:"Fornecedor",estoque:6.0,custo:32.0,valor:192.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
+  {cod:"324.0",nome:"AVENTAL PVC",unf:"UN",fornecedor:"PVC PROTEMAQ",estoque:18.0,custo:11.99,valor:215.82,status:"NORMAL",classe_abc:"C"},
   {cod:"510.0",nome:"DISCO DE CORTE 7/5",unf:"UN",fornecedor:"Fornecedor",estoque:22.0,custo:8.52,valor:187.44,status:"NORMAL",classe_abc:"C"},
   {cod:"514.0",nome:"LIXA 1200",unf:"UN",fornecedor:"Fornecedor",estoque:68.0,custo:2.7,valor:183.6,status:"NORMAL",classe_abc:"C"},
-  {cod:"614.0",nome:"BOTA COURO 43",unf:"UN",fornecedor:"Fornecedor",estoque:3.0,custo:60.0,valor:180.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
-  {cod:"519.0",nome:"LUVA DE PANO",unf:"UN",fornecedor:"Fornecedor",estoque:59.0,custo:2.9,valor:171.1,status:"NORMAL",classe_abc:"C"},
   {cod:"512.0",nome:"LIXA 220",unf:"UN",fornecedor:"Fornecedor",estoque:48.0,custo:3.5,valor:168.0,status:"NORMAL",classe_abc:"C"},
   {cod:"513.0",nome:"LIXA 400",unf:"UN",fornecedor:"Fornecedor",estoque:51.0,custo:3.2,valor:163.2,status:"NORMAL",classe_abc:"C"},
+  {cod:"519.0",nome:"LUVA DE PANO",unf:"UN",fornecedor:"Fornecedor",estoque:45.0,custo:2.9,valor:130.5,status:"NORMAL",classe_abc:"C"},
   {cod:"515.0",nome:"DISCO DE LIXA VELCRO 4 POL",unf:"UN",fornecedor:"Fornecedor",estoque:40.0,custo:3.2,valor:128.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"614.0",nome:"BOTA COURO 43",unf:"UN",fornecedor:"Fornecedor",estoque:2.0,custo:60.0,valor:120.0,status:"CR\u00cdTICO",classe_abc:"C"},
   {cod:"325.0",nome:"ABAFADOR DE RUIDO TIPO CONCHA",unf:"UN",fornecedor:"CONCHA PROTEMAQ",estoque:5.0,custo:22.5,valor:112.5,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
-  {cod:"405.0",nome:"PROTETOR AURICULAR PLUG",unf:"UN",fornecedor:"AURICULAR PPARAFUSOS BAHIA",estoque:99.0,custo:1.0,valor:99.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"405.0",nome:"PROTETOR AURICULAR PLUG",unf:"UN",fornecedor:"AURICULAR PPARAFUSOS BAHIA",estoque:98.0,custo:1.0,valor:98.0,status:"NORMAL",classe_abc:"C"},
   {cod:"399.0",nome:"PINCEL 2 POL",unf:"UN",fornecedor:"2POL CENTRAL DISTRIBUIDORA",estoque:14.0,custo:7.0,valor:98.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"268.0",nome:"ROLO DE LA ZERO GOTA 9CM",unf:"UN",fornecedor:"DE LA CONFIBRAS",estoque:12.0,custo:8.0,valor:96.0,status:"NORMAL",classe_abc:"C"},
   {cod:"143.0",nome:"BOINA LA N-8 LINCOLN",unf:"UN",fornecedor:"PONTO TINTAS",estoque:2.0,custo:43.2,valor:86.4,status:"CR\u00cdTICO",classe_abc:"C"},
+  {cod:"268.0",nome:"ROLO DE LA ZERO GOTA 9CM",unf:"UN",fornecedor:"DE LA CONFIBRAS",estoque:9.0,custo:8.0,valor:72.0,status:"NORMAL",classe_abc:"C"},
   {cod:"439.0",nome:"DISCO DE CORTE 4,5 3MM",unf:"UN",fornecedor:"DE\u00a8CORTE 4,5 LOJAO DOS PARAFUSOS",estoque:14.0,custo:5.13,valor:71.82,status:"NORMAL",classe_abc:"C"},
   {cod:"498.0",nome:"CERA LIQUIDA",unf:"UN",fornecedor:"Fornecedor",estoque:2.0,custo:23.12,valor:46.24,status:"CR\u00cdTICO",classe_abc:"C"},
   {cod:"611.0",nome:"DISCO DE LIXA VELCRO 7 POL",unf:"UN",fornecedor:"Fornecedor",estoque:8.0,custo:5.12,valor:40.96,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
-  {cod:"517.0",nome:"LUVA LATEX",unf:"UN",fornecedor:"ACAO DISTRIBUIDORA",estoque:2.0,custo:9.5,valor:19.0,status:"CR\u00cdTICO",classe_abc:"C"},
   {cod:"507.0",nome:"REFIL PARA MASCARA DE GAS",unf:"UN",fornecedor:"Fornecedor",estoque:4.0,custo:3.0,valor:12.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
-  {cod:"500.0",nome:"MASSA DE POLIR",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:40.25,valor:0.0,status:"ZERADO",classe_abc:"C"},
+  {cod:"517.0",nome:"LUVA LATEX",unf:"UN",fornecedor:"ACAO DISTRIBUIDORA",estoque:0.0,custo:9.5,valor:0.0,status:"ZERADO",classe_abc:"C"},
   {cod:"520.0",nome:"BOTA DE BORRACHA",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:48.0,valor:0.0,status:"ZERADO",classe_abc:"C"},
-  {cod:"283.0",nome:"NIVELANTE DISACOAT LA 100 S - GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:0.0,custo:153.63,valor:0.0,status:"ZERADO",classe_abc:"C"},
+  {cod:"244.0",nome:"ESMALTE ACRILICO BRANCO - LITRO",unf:"UN",fornecedor:"MAIS COR TINTAS LTDA",estoque:68.0,custo:0.0,valor:0.0,status:"NORMAL",classe_abc:"C"},
   {cod:"707.0",nome:"BOTA 45",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:0.0,valor:0.0,status:"ZERADO",classe_abc:"C"},
   {cod:"406.0",nome:"CAMISA MALHA MANGA LONGA",unf:"UN",fornecedor:"MANGA LONGA J LIMA DO NASCIMENTO",estoque:0.0,custo:29.0,valor:0.0,status:"ZERADO",classe_abc:"C"},
-  {cod:"244.0",nome:"ESMALTE ACRILICO BRANCO - LITRO",unf:"UN",fornecedor:"MAIS COR TINTAS LTDA",estoque:68.0,custo:0.0,valor:0.0,status:"NORMAL",classe_abc:"C"}
+  {cod:"500.0",nome:"MASSA DE POLIR",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:40.25,valor:0.0,status:"ZERADO",classe_abc:"C"},
+  {cod:"283.0",nome:"NIVELANTE DISACOAT LA 100 S - GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:0.0,custo:153.63,valor:0.0,status:"ZERADO",classe_abc:"C"}
 ];
 
 // ═══════════════════════════════════════
@@ -1573,6 +1572,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
+  {"dataBase": "08/06/2026", "ts": "2026-06-08T13:30:03", "total": 66, "zerado": 6, "crit": 4, "low": 12, "totalVal": 780259.35},
   {"dataBase": "05/06/2026", "ts": "2026-06-07T19:43:43", "total": 67, "zerado": 5, "crit": 4, "low": 15, "totalVal": 937097.73},
   {"dataBase": "03/06/2026", "ts": "2026-06-05T08:36:45", "total": 67, "zerado": 6, "crit": 14, "low": 16, "totalVal": 626277.67},
   {"dataBase": "02/06/2026", "ts": "2026-06-03T19:04:54", "total": 64, "zerado": 6, "crit": 12, "low": 17, "totalVal": 722129.77},
@@ -1602,7 +1602,6 @@ const HIST_EMBUTIDO = [
   {"dataBase": "17/04/2026", "ts": "2026-04-17T17:59:57", "total": 65, "zerado": 3, "crit": 15, "low": 16, "totalVal": 382614.22},
   {"dataBase": "16/04/2026", "ts": "2026-04-16T17:08:29", "total": 65, "zerado": 0, "crit": 15, "low": 18, "totalVal": 501919.1},
   {"dataBase": "15/04/2026", "ts": "2026-04-15T17:19:14", "total": 65, "zerado": 0, "crit": 15, "low": 18, "totalVal": 431722.35},
-  {"dataBase": "14/04/2026", "ts": "2026-04-14T17:50:16", "total": 65, "zerado": 0, "crit": 14, "low": 18, "totalVal": 647251.85},
 // HIST_EMBED_END
 ];
 
