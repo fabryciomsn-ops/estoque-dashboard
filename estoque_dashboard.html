@@ -797,7 +797,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">780.259,35</span>
+          <span class="kpi-value money" id="kpi-total">911.195,35</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -1019,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">08/06/2026 13:01</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">08/06/2026 18:04</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -1032,12 +1032,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===========================================
 const ESTOQUE_DATA = [
   {cod:"190.0",nome:"POLIETILENO PEBD",unf:"KG",fornecedor:"ZERO GRAU ATACADOS",estoque:31937.0,custo:15.18,valor:484803.66,status:"NORMAL",classe_abc:"A"},
-  {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:12100.3,custo:14.92,valor:180536.48,status:"NORMAL",classe_abc:"B"},
+  {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:20900.3,custo:14.92,valor:311832.48,status:"NORMAL",classe_abc:"B"},
   {cod:"57.0",nome:"ROVING",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:3708.7,custo:9.03,valor:33489.56,status:"NORMAL",classe_abc:"B"},
   {cod:"50.0",nome:"CATALISADOR",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:1100.0,custo:18.65,valor:20515.0,status:"NORMAL",classe_abc:"B"},
   {cod:"55.0",nome:"PIGMENTO AZUL",unf:"KG",fornecedor:"SENNI",estoque:155.0,custo:42.89,valor:6647.95,status:"ATEN\u00c7\u00c3O",classe_abc:"B"},
   {cod:"54.0",nome:"SILICA PIROGENICA - AEROSIL",unf:"KG",fornecedor:"SENNI",estoque:170.0,custo:36.0,valor:6120.0,status:"ATEN\u00c7\u00c3O",classe_abc:"B"},
-  {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:600.0,custo:8.7,valor:5220.0,status:"NORMAL",classe_abc:"B"},
+  {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:600.0,custo:8.7,valor:5220.0,status:"NORMAL",classe_abc:"C"},
   {cod:"653.0",nome:"ADESIVO TAMPA",unf:"ML",fornecedor:"Fornecedor",estoque:27.0,custo:170.0,valor:4590.0,status:"NORMAL",classe_abc:"C"},
   {cod:"238.0",nome:"DIOXIDO DE TITANIO",unf:"KG",fornecedor:"INTERCOM",estoque:200.0,custo:20.35,valor:4070.0,status:"NORMAL",classe_abc:"C"},
   {cod:"608.0",nome:"ESTIRENO",unf:"LT",fornecedor:"Fornecedor",estoque:400.0,custo:9.8,valor:3920.0,status:"NORMAL",classe_abc:"C"},
@@ -1064,7 +1064,6 @@ const ESTOQUE_DATA = [
   {cod:"333.0",nome:"CORDA TRANCADA 8MM",unf:"UN",fornecedor:"CENTRAL DISTRIBUIDORA",estoque:50.0,custo:8.64,valor:432.0,status:"NORMAL",classe_abc:"C"},
   {cod:"408.0",nome:"OCULOS JAGUAR INCOLOR",unf:"UN",fornecedor:"JAGUAR INCOLOFEIRA PROTECAO",estoque:54.0,custo:7.09,valor:382.86,status:"NORMAL",classe_abc:"C"},
   {cod:"378.0",nome:"ROLETE 25 X 80",unf:"UN",fornecedor:"Fornecedor",estoque:15.0,custo:24.12,valor:361.8,status:"NORMAL",classe_abc:"C"},
-  {cod:"353.0",nome:"BOTA CR. ELAS. 39",unf:"UN",fornecedor:"CENTRAL DISTRIBUIDORA",estoque:6.0,custo:60.0,valor:360.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"332.0",nome:"MASCARA DESCARTAVEL PFF2",unf:"UN",fornecedor:"PFF2 CENTRAL DISTRIBUIDORA",estoque:315.0,custo:1.1,valor:346.5,status:"NORMAL",classe_abc:"C"},
   {cod:"108.0",nome:"FILME PVC 400X11 PB 408",unf:"KG",fornecedor:". BRANDAO EMBALAGENS",estoque:3.0,custo:110.0,valor:330.0,status:"CR\u00cdTICO",classe_abc:"C"},
   {cod:"327.0",nome:"LIXA DE FERRO 60",unf:"UN",fornecedor:"FERRO 60 CENTRAL DISTRIBUIDORA",estoque:53.0,custo:5.95,valor:315.35,status:"NORMAL",classe_abc:"C"},
@@ -1572,7 +1571,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
-  {"dataBase": "08/06/2026", "ts": "2026-06-08T17:30:02", "total": 66, "zerado": 6, "crit": 4, "low": 12, "totalVal": 780259.35},
+  {"dataBase": "08/06/2026", "ts": "2026-06-08T18:07:42", "total": 65, "zerado": 6, "crit": 4, "low": 11, "totalVal": 911195.35},
   {"dataBase": "05/06/2026", "ts": "2026-06-07T19:43:43", "total": 67, "zerado": 5, "crit": 4, "low": 15, "totalVal": 937097.73},
   {"dataBase": "03/06/2026", "ts": "2026-06-05T08:36:45", "total": 67, "zerado": 6, "crit": 14, "low": 16, "totalVal": 626277.67},
   {"dataBase": "02/06/2026", "ts": "2026-06-03T19:04:54", "total": 64, "zerado": 6, "crit": 12, "low": 17, "totalVal": 722129.77},
