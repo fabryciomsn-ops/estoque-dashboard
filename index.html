@@ -797,7 +797,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">979.170,00</span>
+          <span class="kpi-value money" id="kpi-total">979.266,00</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -1019,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">09/06/2026 09:14</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">09/06/2026 09:46</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -1085,17 +1085,18 @@ const ESTOQUE_DATA = [
   {cod:"614.0",nome:"BOTA COURO 43",unf:"UN",fornecedor:"Fornecedor",estoque:2.0,custo:60.0,valor:120.0,status:"CR\u00cdTICO",classe_abc:"C"},
   {cod:"325.0",nome:"ABAFADOR DE RUIDO TIPO CONCHA",unf:"UN",fornecedor:"CONCHA PROTEMAQ",estoque:5.0,custo:22.5,valor:112.5,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"405.0",nome:"PROTETOR AURICULAR PLUG",unf:"UN",fornecedor:"AURICULAR PPARAFUSOS BAHIA",estoque:98.0,custo:1.0,valor:98.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"516.0",nome:"ESPATULA DE FERRO",unf:"UN",fornecedor:"Fornecedor",estoque:3.0,custo:32.0,valor:96.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"143.0",nome:"BOINA LA N-8 LINCOLN",unf:"UN",fornecedor:"PONTO TINTAS",estoque:2.0,custo:43.2,valor:86.4,status:"CR\u00cdTICO",classe_abc:"C"},
   {cod:"268.0",nome:"ROLO DE LA ZERO GOTA 9CM",unf:"UN",fornecedor:"DE LA CONFIBRAS",estoque:9.0,custo:8.0,valor:72.0,status:"NORMAL",classe_abc:"C"},
   {cod:"439.0",nome:"DISCO DE CORTE 4,5 3MM",unf:"UN",fornecedor:"DE\u00a8CORTE 4,5 LOJAO DOS PARAFUSOS",estoque:14.0,custo:5.13,valor:71.82,status:"NORMAL",classe_abc:"C"},
   {cod:"498.0",nome:"CERA LIQUIDA",unf:"UN",fornecedor:"Fornecedor",estoque:2.0,custo:23.12,valor:46.24,status:"CR\u00cdTICO",classe_abc:"C"},
   {cod:"611.0",nome:"DISCO DE LIXA VELCRO 7 POL",unf:"UN",fornecedor:"Fornecedor",estoque:8.0,custo:5.12,valor:40.96,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"507.0",nome:"REFIL PARA MASCARA DE GAS",unf:"UN",fornecedor:"Fornecedor",estoque:4.0,custo:3.0,valor:12.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
-  {cod:"283.0",nome:"NIVELANTE DISACOAT LA 100 S - GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:0.0,custo:153.63,valor:0.0,status:"ZERADO",classe_abc:"C"},
   {cod:"520.0",nome:"BOTA DE BORRACHA",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:48.0,valor:0.0,status:"ZERADO",classe_abc:"C"},
-  {cod:"707.0",nome:"BOTA 45",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:0.0,valor:0.0,status:"ZERADO",classe_abc:"C"},
+  {cod:"283.0",nome:"NIVELANTE DISACOAT LA 100 S - GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:0.0,custo:153.63,valor:0.0,status:"ZERADO",classe_abc:"C"},
   {cod:"500.0",nome:"MASSA DE POLIR",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:40.25,valor:0.0,status:"ZERADO",classe_abc:"C"},
   {cod:"244.0",nome:"ESMALTE ACRILICO BRANCO - LITRO",unf:"UN",fornecedor:"MAIS COR TINTAS LTDA",estoque:68.0,custo:0.0,valor:0.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"707.0",nome:"BOTA 45",unf:"UN",fornecedor:"Fornecedor",estoque:0.0,custo:0.0,valor:0.0,status:"ZERADO",classe_abc:"C"},
   {cod:"406.0",nome:"CAMISA MALHA MANGA LONGA",unf:"UN",fornecedor:"MANGA LONGA J LIMA DO NASCIMENTO",estoque:0.0,custo:29.0,valor:0.0,status:"ZERADO",classe_abc:"C"}
 ];
 
@@ -1572,7 +1573,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
-  {"dataBase": "09/06/2026", "ts": "2026-06-09T09:46:03", "total": 66, "zerado": 5, "crit": 4, "low": 11, "totalVal": 979170.0},
+  {"dataBase": "09/06/2026", "ts": "2026-06-09T09:48:08", "total": 67, "zerado": 5, "crit": 4, "low": 12, "totalVal": 979266.0},
   {"dataBase": "08/06/2026", "ts": "2026-06-08T18:07:42", "total": 65, "zerado": 6, "crit": 4, "low": 11, "totalVal": 911195.35},
   {"dataBase": "05/06/2026", "ts": "2026-06-07T19:43:43", "total": 67, "zerado": 5, "crit": 4, "low": 15, "totalVal": 937097.73},
   {"dataBase": "03/06/2026", "ts": "2026-06-05T08:36:45", "total": 67, "zerado": 6, "crit": 14, "low": 16, "totalVal": 626277.67},
