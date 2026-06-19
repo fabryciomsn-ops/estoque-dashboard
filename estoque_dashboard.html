@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <div class="topbar-right">
-    <div class="data-badge">Base: <span id="data-base">18/06/2026</span></div>
+    <div class="data-badge">Base: <span id="data-base">19/06/2026</span></div>
     <div class="data-badge" style="display:none" id="total-badge">63 itens</div>
     <button class="hist-btn" onclick="abrirHistorico()" title="Histórico de atualizações">🕐 Histórico</button>
     <button class="hist-btn btn-print-estoque" onclick="imprimirEstoque('total')" title="Imprimir Estoque Total">🖨 Estoque</button>
@@ -797,7 +797,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">658.285,64</span>
+          <span class="kpi-value money" id="kpi-total">760.441,04</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -1019,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">18/06/2026 17:13</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">19/06/2026 13:01</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -1032,7 +1032,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===========================================
 const ESTOQUE_DATA = [
   {cod:"190.0",nome:"POLIETILENO PEBD",unf:"KG",fornecedor:"ZERO GRAU ATACADOS",estoque:21000.0,custo:15.18,valor:318780.0,status:"NORMAL",classe_abc:"A"},
-  {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:11660.3,custo:14.92,valor:173971.68,status:"NORMAL",classe_abc:"A"},
+  {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:18260.3,custo:14.92,valor:272443.68,status:"NORMAL",classe_abc:"A"},
   {cod:"4.0",nome:"GAS A GRANEL GLP",unf:"KG",fornecedor:"BAHIANA GAS - MATARIPE",estoque:6200.18,custo:6.77,valor:41975.22,status:"NORMAL",classe_abc:"B"},
   {cod:"57.0",nome:"ROVING",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:2643.9,custo:9.03,valor:23874.42,status:"NORMAL",classe_abc:"B"},
   {cod:"238.0",nome:"DIOXIDO DE TITANIO",unf:"KG",fornecedor:"INTERCOM",estoque:900.0,custo:20.35,valor:18315.0,status:"NORMAL",classe_abc:"B"},
@@ -1041,11 +1041,11 @@ const ESTOQUE_DATA = [
   {cod:"55.0",nome:"PIGMENTO AZUL",unf:"KG",fornecedor:"SENNI",estoque:155.0,custo:42.89,valor:6647.95,status:"ATEN\u00c7\u00c3O",classe_abc:"B"},
   {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:710.0,custo:8.7,valor:6177.0,status:"NORMAL",classe_abc:"B"},
   {cod:"54.0",nome:"SILICA PIROGENICA - AEROSIL",unf:"KG",fornecedor:"SENNI",estoque:170.0,custo:36.0,valor:6120.0,status:"ATEN\u00c7\u00c3O",classe_abc:"B"},
-  {cod:"653.0",nome:"ADESIVO TAMPA",unf:"ML",fornecedor:"Fornecedor",estoque:27.0,custo:170.0,valor:4590.0,status:"ATEN\u00c7\u00c3O",classe_abc:"B"},
+  {cod:"119.0",nome:"DESMOLDANTE PMR-90 1LT",unf:"LT",fornecedor:"CONFIBRAS",estoque:19.0,custo:306.95,valor:5832.05,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
+  {cod:"653.0",nome:"ADESIVO TAMPA",unf:"ML",fornecedor:"Fornecedor",estoque:27.0,custo:170.0,valor:4590.0,status:"NORMAL",classe_abc:"C"},
   {cod:"259.0",nome:"THINNER",unf:"LT",fornecedor:"MARLON",estoque:400.0,custo:8.0,valor:3200.0,status:"NORMAL",classe_abc:"C"},
   {cod:"189.0",nome:"SELADOR CHL 15",unf:"UN",fornecedor:"CONFIBRAS",estoque:5.0,custo:482.6,valor:2413.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"178.0",nome:"ACELERADOR DMA - 1",unf:"LT",fornecedor:". CONFIBRAS",estoque:35.0,custo:65.0,valor:2275.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"119.0",nome:"DESMOLDANTE PMR-90 1LT",unf:"LT",fornecedor:"CONFIBRAS",estoque:7.0,custo:306.95,valor:2148.65,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"257.0",nome:"MANUAL DE INSTALACAO",unf:"ML",fornecedor:"Fornecedor",estoque:7.0,custo:280.0,valor:1960.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"12.0",nome:"CERA DESMOLDANTE",unf:"KG",fornecedor:"CONFIBRAS",estoque:72.0,custo:25.0,valor:1800.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"303.0",nome:"PASTA BRANCA",unf:"UN",fornecedor:"BRANCA CONFIBRAS",estoque:32.0,custo:53.2,valor:1702.4,status:"NORMAL",classe_abc:"C"},
@@ -1574,6 +1574,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
+  {"dataBase": "19/06/2026", "ts": "2026-06-19T13:30:02", "total": 68, "zerado": 4, "crit": 2, "low": 14, "totalVal": 760441.04},
   {"dataBase": "18/06/2026", "ts": "2026-06-18T17:30:01", "total": 68, "zerado": 4, "crit": 2, "low": 15, "totalVal": 658285.64},
   {"dataBase": "16/06/2026", "ts": "2026-06-17T17:30:01", "total": 68, "zerado": 3, "crit": 3, "low": 14, "totalVal": 765721.69},
   {"dataBase": "15/06/2026", "ts": "2026-06-16T09:07:21", "total": 68, "zerado": 3, "crit": 4, "low": 15, "totalVal": 696316.09},
@@ -1603,7 +1604,6 @@ const HIST_EMBUTIDO = [
   {"dataBase": "29/04/2026", "ts": "2026-04-29T18:00:57", "total": 66, "zerado": 1, "crit": 21, "low": 15, "totalVal": 546263.73},
   {"dataBase": "28/04/2026", "ts": "2026-04-28T18:22:30", "total": 66, "zerado": 2, "crit": 14, "low": 21, "totalVal": 628083.15},
   {"dataBase": "27/04/2026", "ts": "2026-04-27T18:30:29", "total": 66, "zerado": 1, "crit": 14, "low": 17, "totalVal": 750566.28},
-  {"dataBase": "24/04/2026", "ts": "2026-04-24T12:37:57", "total": 66, "zerado": 2, "crit": 14, "low": 17, "totalVal": 608693.7},
 // HIST_EMBED_END
 ];
 
