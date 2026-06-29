@@ -750,7 +750,7 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <div class="topbar-right">
-    <div class="data-badge">Base: <span id="data-base">26/06/2026</span></div>
+    <div class="data-badge">Base: <span id="data-base">29/06/2026</span></div>
     <div class="data-badge" style="display:none" id="total-badge">63 itens</div>
     <button class="hist-btn" onclick="abrirHistorico()" title="Histórico de atualizações">🕐 Histórico</button>
     <button class="hist-btn btn-print-estoque" onclick="imprimirEstoque('total')" title="Imprimir Estoque Total">🖨 Estoque</button>
@@ -797,7 +797,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">1.092.725,81</span>
+          <span class="kpi-value money" id="kpi-total">1.092.365,81</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -1019,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">26/06/2026 17:01</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">29/06/2026 08:37</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -1055,8 +1055,8 @@ const ESTOQUE_DATA = [
   {cod:"519.0",nome:"LUVA DE PANO",unf:"UN",fornecedor:"Fornecedor",estoque:289.0,custo:2.9,valor:838.1,status:"NORMAL",classe_abc:"C"},
   {cod:"406.0",nome:"CAMISA MALHA MANGA LONGA",unf:"UN",fornecedor:"MANGA LONGA J LIMA DO NASCIMENTO",estoque:26.0,custo:29.0,valor:754.0,status:"NORMAL",classe_abc:"C"},
   {cod:"402.0",nome:"BOTA COURO 41",unf:"UN",fornecedor:"COURO 41 PARAFUSOS BAHIA",estoque:11.0,custo:60.0,valor:660.0,status:"NORMAL",classe_abc:"C"},
-  {cod:"401.0",nome:"BOTA COURO 40",unf:"UN",fornecedor:"COURO 40 PARAFUSOS BAHIA",estoque:9.0,custo:60.0,valor:540.0,status:"NORMAL",classe_abc:"C"},
   {cod:"306.0",nome:"ETIQUETA 20X20 RED BOPP/ T LISA",unf:"ML",fornecedor:"REDONDA VM DISTRIBUICAO V M GRAFICA E",estoque:27.0,custo:20.0,valor:540.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"401.0",nome:"BOTA COURO 40",unf:"UN",fornecedor:"COURO 40 PARAFUSOS BAHIA",estoque:9.0,custo:60.0,valor:540.0,status:"NORMAL",classe_abc:"C"},
   {cod:"15.0",nome:"BUCHA PU VERDE 12",unf:"UN",fornecedor:"Equiplas",estoque:17.0,custo:30.2,valor:513.4,status:"NORMAL",classe_abc:"C"},
   {cod:"403.0",nome:"BOTA COURO 42",unf:"UN",fornecedor:"COURO 42 PARAFUSOS BAHIA",estoque:8.0,custo:60.0,valor:480.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"518.0",nome:"MASCARA DE GAS",unf:"UN",fornecedor:"Fornecedor",estoque:17.0,custo:28.0,valor:476.0,status:"NORMAL",classe_abc:"C"},
@@ -1069,7 +1069,6 @@ const ESTOQUE_DATA = [
   {cod:"399.0",nome:"PINCEL 2 POL",unf:"UN",fornecedor:"2POL CENTRAL DISTRIBUIDORA",estoque:57.0,custo:7.0,valor:399.0,status:"NORMAL",classe_abc:"C"},
   {cod:"516.0",nome:"ESPATULA DE FERRO",unf:"UN",fornecedor:"Fornecedor",estoque:12.0,custo:32.0,valor:384.0,status:"NORMAL",classe_abc:"C"},
   {cod:"408.0",nome:"OCULOS JAGUAR INCOLOR",unf:"UN",fornecedor:"JAGUAR INCOLOFEIRA PROTECAO",estoque:53.0,custo:7.09,valor:375.77,status:"NORMAL",classe_abc:"C"},
-  {cod:"353.0",nome:"BOTA CR. ELAS. 39",unf:"UN",fornecedor:"CENTRAL DISTRIBUIDORA",estoque:6.0,custo:60.0,valor:360.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
   {cod:"517.0",nome:"LUVA LATEX",unf:"UN",fornecedor:"ACAO DISTRIBUIDORA",estoque:37.0,custo:9.5,valor:351.5,status:"NORMAL",classe_abc:"C"},
   {cod:"378.0",nome:"ROLETE 25 X 80",unf:"UN",fornecedor:"Fornecedor",estoque:14.0,custo:24.12,valor:337.68,status:"NORMAL",classe_abc:"C"},
   {cod:"328.0",nome:"LIXA DE FERRO 36",unf:"UN",fornecedor:"FERRO 36 CENTRAL DISTRIBUIDORA",estoque:62.0,custo:4.8,valor:297.6,status:"NORMAL",classe_abc:"C"},
@@ -1574,6 +1573,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
+  {"dataBase": "29/06/2026", "ts": "2026-06-29T08:44:15", "total": 67, "zerado": 4, "crit": 2, "low": 12, "totalVal": 1092365.81},
   {"dataBase": "26/06/2026", "ts": "2026-06-26T17:30:02", "total": 68, "zerado": 4, "crit": 2, "low": 13, "totalVal": 1092725.81},
   {"dataBase": "25/06/2026", "ts": "2026-06-26T13:30:02", "total": 68, "zerado": 4, "crit": 2, "low": 13, "totalVal": 1233010.31},
   {"dataBase": "22/06/2026", "ts": "2026-06-22T13:30:03", "total": 68, "zerado": 4, "crit": 2, "low": 13, "totalVal": 777610.31},
@@ -1603,7 +1603,6 @@ const HIST_EMBUTIDO = [
   {"dataBase": "06/05/2026", "ts": "2026-05-06T18:28:37", "total": 66, "zerado": 2, "crit": 18, "low": 13, "totalVal": 638141.59},
   {"dataBase": "05/05/2026", "ts": "2026-05-05T17:45:41", "total": 66, "zerado": 1, "crit": 19, "low": 13, "totalVal": 938300.81},
   {"dataBase": "04/05/2026", "ts": "2026-05-04T17:23:24", "total": 66, "zerado": 1, "crit": 19, "low": 13, "totalVal": 805599.69},
-  {"dataBase": "30/04/2026", "ts": "2026-04-30T18:11:41", "total": 66, "zerado": 1, "crit": 19, "low": 16, "totalVal": 914000.22},
 // HIST_EMBED_END
 ];
 
