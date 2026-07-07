@@ -797,7 +797,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="kpi-label">Valor Total do Estoque</div>
         <div class="kpi-value-money-wrap">
           <span class="kpi-currency">R$</span>
-          <span class="kpi-value money" id="kpi-total">469.671,01</span>
+          <span class="kpi-value money" id="kpi-total">659.313,91</span>
         </div>
         <div class="kpi-sub">Custo médio projetado</div>
         <div class="kpi-icon">💰</div>
@@ -1019,7 +1019,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <!-- FOOTER -->
   <div class="footer">
     <div><strong>MULTPLAST IND PLAST LTDA</strong> · <span style="color:var(--yellow);font-weight:600;">Gestão de Compras e Estoque</span></div>
-    <div>Atualizado em <span id="footer-date">07/07/2026 13:01</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
+    <div>Atualizado em <span id="footer-date">07/07/2026 17:01</span> · <span style="color:var(--accent)">Custo Médio Projetado</span></div>
   </div>
 </div>
 
@@ -1032,16 +1032,16 @@ document.addEventListener('DOMContentLoaded', () => {
 // ===========================================
 const ESTOQUE_DATA = [
   {cod:"190.0",nome:"POLIETILENO PEBD",unf:"KG",fornecedor:"ZERO GRAU ATACADOS",estoque:15000.0,custo:15.18,valor:227700.0,status:"NORMAL",classe_abc:"A"},
-  {cod:"4.0",nome:"GAS A GRANEL GLP",unf:"KG",fornecedor:"BAHIANA GAS - MATARIPE",estoque:9140.18,custo:6.77,valor:61879.02,status:"NORMAL",classe_abc:"A"},
-  {cod:"57.0",nome:"ROVING",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:5550.4,custo:9.03,valor:50120.11,status:"NORMAL",classe_abc:"A"},
-  {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:3243.3,custo:14.92,valor:48390.04,status:"NORMAL",classe_abc:"B"},
+  {cod:"46.0",nome:"RESINA POLIESTER LAMINACAO GERAL",unf:"KG",fornecedor:"BEMA TINTAS LTDA",estoque:14243.3,custo:14.92,valor:212510.04,status:"NORMAL",classe_abc:"A"},
+  {cod:"4.0",nome:"GAS A GRANEL GLP",unf:"KG",fornecedor:"BAHIANA GAS - MATARIPE",estoque:12910.18,custo:6.77,valor:87401.92,status:"NORMAL",classe_abc:"B"},
+  {cod:"57.0",nome:"ROVING",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:5550.4,custo:9.03,valor:50120.11,status:"NORMAL",classe_abc:"B"},
   {cod:"238.0",nome:"DIOXIDO DE TITANIO",unf:"KG",fornecedor:"INTERCOM",estoque:875.0,custo:20.35,valor:17806.25,status:"NORMAL",classe_abc:"B"},
   {cod:"50.0",nome:"CATALISADOR",unf:"KG",fornecedor:"PERCILGLASS RESINAS",estoque:460.0,custo:18.65,valor:8579.0,status:"NORMAL",classe_abc:"B"},
   {cod:"55.0",nome:"PIGMENTO AZUL",unf:"KG",fornecedor:"SENNI",estoque:180.0,custo:42.89,valor:7720.2,status:"ATEN\u00c7\u00c3O",classe_abc:"B"},
   {cod:"283.0",nome:"NIVELANTE DISACOAT LA 100 S - GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:45.0,custo:153.63,valor:6913.35,status:"CR\u00cdTICO",classe_abc:"B"},
   {cod:"259.0",nome:"THINNER",unf:"LT",fornecedor:"MARLON",estoque:601.0,custo:8.0,valor:4808.0,status:"NORMAL",classe_abc:"B"},
-  {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:550.0,custo:8.7,valor:4785.0,status:"NORMAL",classe_abc:"B"},
-  {cod:"653.0",nome:"ADESIVO TAMPA",unf:"ML",fornecedor:"Fornecedor",estoque:27.0,custo:170.0,valor:4590.0,status:"ATEN\u00c7\u00c3O",classe_abc:"B"},
+  {cod:"560.0",nome:"MANTA DE FIBRA DE VIDRO 450GR / 1,40 GRANEL",unf:"KG",fornecedor:"LOTUS",estoque:550.0,custo:8.7,valor:4785.0,status:"NORMAL",classe_abc:"C"},
+  {cod:"653.0",nome:"ADESIVO TAMPA",unf:"ML",fornecedor:"Fornecedor",estoque:27.0,custo:170.0,valor:4590.0,status:"NORMAL",classe_abc:"C"},
   {cod:"7.0",nome:"LAMINA 1 FURO",unf:"UN",fornecedor:"Equiplas",estoque:1500.0,custo:2.3,valor:3450.0,status:"NORMAL",classe_abc:"C"},
   {cod:"178.0",nome:"ACELERADOR DMA - 1",unf:"LT",fornecedor:". CONFIBRAS",estoque:35.0,custo:65.0,valor:2275.0,status:"NORMAL",classe_abc:"C"},
   {cod:"54.0",nome:"SILICA PIROGENICA - AEROSIL",unf:"KG",fornecedor:"SENNI",estoque:60.0,custo:36.0,valor:2160.0,status:"ATEN\u00c7\u00c3O",classe_abc:"C"},
@@ -1574,7 +1574,7 @@ const HIST_MAX = 30;
 // ── HISTÓRICO EMBUTIDO PELO PYTHON ── (âncora — não remover)
 const HIST_EMBUTIDO = [
 // HIST_EMBED_START
-  {"dataBase": "07/07/2026", "ts": "2026-07-07T13:30:01", "total": 68, "zerado": 8, "crit": 4, "low": 13, "totalVal": 469671.01},
+  {"dataBase": "07/07/2026", "ts": "2026-07-07T17:30:01", "total": 68, "zerado": 8, "crit": 4, "low": 12, "totalVal": 659313.91},
   {"dataBase": "06/07/2026", "ts": "2026-07-06T18:16:24", "total": 68, "zerado": 6, "crit": 4, "low": 12, "totalVal": 1074621.28},
   {"dataBase": "30/06/2026", "ts": "2026-07-06T17:30:01", "total": 67, "zerado": 5, "crit": 4, "low": 12, "totalVal": 829717.19},
   {"dataBase": "29/06/2026", "ts": "2026-06-29T08:44:15", "total": 67, "zerado": 4, "crit": 2, "low": 12, "totalVal": 1092365.81},
